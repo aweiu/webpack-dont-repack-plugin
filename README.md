@@ -2,7 +2,7 @@
 
 One line of code to solve repeated packaging of webpack
 
-![Example 1](examples/1.png)
+![Example 1](https://github.com/aweiu/webpack-dont-repack-plugin/raw/main/examples/1.png)
 
 ## Install
 
@@ -33,7 +33,7 @@ new WebpackSplitChunksPlugin({
 
 If `log: true`, you will see in the console after the build is completed:
 
-![Example 2](examples/2.png)
+![Example 2](https://github.com/aweiu/webpack-dont-repack-plugin/raw/main/examples/2.png)
 
 ## Risk
 
