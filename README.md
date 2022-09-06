@@ -4,6 +4,12 @@ One line of code to solve repeated packaging of webpack
 
 ![Example 1](https://github.com/aweiu/webpack-dont-repack-plugin/raw/main/examples/1.png)
 
+
+> **Note** 
+> 
+> It requires `webpack` >= `5.x`
+
+
 ## Install
 
 ```
