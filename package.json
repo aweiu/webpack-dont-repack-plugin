@@ -1,7 +1,7 @@
 {
   "name": "webpack-dont-repack-plugin",
   "description": "One line of code to solve repeated packaging of webpack",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "dist/index.js",
   "keywords": [
     "webpack",

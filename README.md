@@ -17,7 +17,7 @@ npm install webpack-dont-repack-plugin
 {
   ...
   plugins: [
-      new WebpackSplitChunksPlugin()
+      new WebpackDontRepackPlugin()
   ],
   ...
 }
@@ -26,7 +26,7 @@ npm install webpack-dont-repack-plugin
 ## Config
 
 ```
-new WebpackSplitChunksPlugin({
+new WebpackDontRepackPlugin({
   log: false // default: true
 })
 ```
