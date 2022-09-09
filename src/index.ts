@@ -29,11 +29,11 @@ class WebpackDontRepackPlugin {
         resolver.hooks.result.tap(this.constructor.name, (result) => {
           const { descriptionFileData, path, relativePath } = result;
           // @ts-ignore
-          const { name, _id } = descriptionFileData;
-          const key = _id || name;
+          const { name, version } = descriptionFileData; // package.json 信息
+          const key = name + version; // 名称 + 版本作为模块唯一标志
 
           if (key && path) {
-            const id = key + relativePath; // key + 相对路径作为模块唯一索引
+            const id = key + relativePath; // key + 相对路径作为模块唯一索引, 因为还会存在 require(name/...relativePath) 的引用
             const cachePath = this.pathCache.get(id);
 
             if (cachePath === undefined) {
